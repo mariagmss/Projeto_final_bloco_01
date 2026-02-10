@@ -16,12 +16,12 @@ export class BolsaAvulsa extends Produto {
 	public visualizar(): void {
 		    console.log(Colors.fg.magentastrong,"┌────────────────────────────────────┐");
         console.log(" │           Bolsa Avulsa             │");
-        console.log(" │────────────────────────────────────│");
-        console.log(` │   ID: ${this.id}                   │`);
-        console.log(` │   Nome: ${this.nome}               │`);
-        console.log(` │   Tamanho: ${this.tamanho}         │`);
-        console.log(` │   Cor: ${this.cor}                 │`);
-        console.log(` │   Preço: ${this.preco}             │`);
+        console.log(" └────────────────────────────────────┘");
+        console.log(`     ID: ${this.id}`);
+        console.log(`     Nome: ${this.nome}`);
+        console.log(`     Tamanho: ${this.tamanho}`);
+        console.log(`     Cor: ${this.cor}`);
+        console.log(`     Preço: R$ ${(this.preco).toFixed(2)}`);
         console.log(" └────────────────────────────────────┘", Colors.reset);
 	}
 }
