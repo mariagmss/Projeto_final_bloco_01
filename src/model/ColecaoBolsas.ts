@@ -24,12 +24,12 @@ export class ColecaoBolsas extends Produto {
 
         console.log(Colors.fg.magentastrong,"┌────────────────────────────────────┐");
         console.log(" │          Bolsas de Coleção         │");
-        console.log(" │────────────────────────────────────│");
-        console.log(` │   ID: ${this.id}                   │`);
-        console.log(` │   Coleção : ${this.nomeColecao}    │`);
-        console.log(` │   Tamanho: ${this.tamanho}         │`);
-        console.log(` │   Cor: ${this.cor}                 │`);
-        console.log(` │   preço: ${this.preco}             │`);
+        console.log(" └────────────────────────────────────┘");
+        console.log(`     ID: ${this.id}`);
+        console.log(`     Coleção : ${this.nomeColecao}`);
+        console.log(`     Tamanho: ${this.tamanho}`);
+        console.log(`     Cor: ${this.cor}`);
+        console.log(`     preço: R$ ${(this.preco).toFixed(2)}`);
         console.log(" └────────────────────────────────────┘", Colors.reset);
     }
 }
